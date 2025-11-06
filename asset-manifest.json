@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/foodtimer/static/css/main.81ca36b6.css",
+    "main.js": "/foodtimer/static/js/main.a3bfaa16.js",
+    "static/js/453.375131c8.chunk.js": "/foodtimer/static/js/453.375131c8.chunk.js",
+    "index.html": "/foodtimer/index.html",
+    "main.81ca36b6.css.map": "/foodtimer/static/css/main.81ca36b6.css.map",
+    "main.a3bfaa16.js.map": "/foodtimer/static/js/main.a3bfaa16.js.map",
+    "453.375131c8.chunk.js.map": "/foodtimer/static/js/453.375131c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81ca36b6.css",
+    "static/js/main.a3bfaa16.js"
+  ]
+}
