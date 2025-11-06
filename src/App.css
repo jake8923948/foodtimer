@@ -29,6 +29,13 @@ h1 {
 
 .form-container {
   display: flex;
+  margin-bottom: 10px;
+}
+
+.instruction-text {
+  font-size: 0.9em;
+  color: #aaa;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -122,4 +129,16 @@ li {
 .modal-content p {
   font-size: 1.2em;
   margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }

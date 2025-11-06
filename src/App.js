@@ -128,6 +128,7 @@ function App() {
             />
             <button onClick={addFoodItem}>Add</button>
           </div>
+          <p className="instruction-text">Press Enter to advance or submit.</p>
           <button onClick={startCooking} className="start-cooking-btn">Start Cooking</button>
         </div>
       ) : (
