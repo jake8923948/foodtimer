@@ -2,7 +2,7 @@
   "name": "foodtimer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://your-github-username.github.io/your-repo-name",
+  "homepage": "https://jake8923948.github.io/foodtimer",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
