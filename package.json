@@ -2,6 +2,7 @@
   "name": "foodtimer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://your-github-username.github.io/your-repo-name",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -13,16 +14,17 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "npm-force-resolutions": "^0.0.10"
   },
   "browserslist": {
     "production": [
@@ -35,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "eslint-plugin-react": "^7.34.1"
   }
 }
