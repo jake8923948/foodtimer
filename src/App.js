@@ -55,19 +55,24 @@ function App() {
         new Notification(message);
       }
 
-      const currentIndex = foodItems.findIndex(item => item.name === nextItem.name);
-      const nextIndex = currentIndex + 1;
+      // Find the index of the item that just finished (which was the current nextItem)
+      const finishedItemIndex = foodItems.findIndex(item => item.name === (nextItem ? nextItem.name : null));
+      const nextItemToCookIndex = finishedItemIndex + 1;
 
-      if (nextIndex < foodItems.length) {
-        const nextFoodItem = foodItems[nextIndex];
+      if (nextItemToCookIndex < foodItems.length) {
+        const nextFoodItem = foodItems[nextItemToCookIndex];
         setNextItem(nextFoodItem);
-        if (foodItems[nextIndex + 1]) {
-          setTimer((nextFoodItem.time - foodItems[nextIndex + 1].time) * 60);
+        // Calculate timer for the next interval
+        if (foodItems[nextItemToCookIndex + 1]) {
+          setTimer((nextFoodItem.time - foodItems[nextItemToCookIndex + 1].time) * 60);
         } else {
+          // If it's the last item, timer is its full cook time
           setTimer(nextFoodItem.time * 60);
         }
       } else {
+        // All items are done
         setIsCooking(false);
+        setNextItem(null);
       }
     }
   }, [isCooking, timer, foodItems, nextItem]);
