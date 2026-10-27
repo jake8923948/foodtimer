@@ -66,6 +66,16 @@ button:hover {
   background-color: #0088cc;
 }
 
+button:disabled {
+  background-color: #444;
+  color: #888;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #444;
+}
+
 .start-cooking-btn {
   width: 100%;
   margin-top: 10px;
@@ -74,6 +84,44 @@ button:hover {
 
 .start-cooking-btn:hover {
   background-color: #00aa55;
+}
+
+.stage2-container {
+  align-items: center;
+}
+
+.stage-label {
+  color: #00aaff;
+  font-weight: bold;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.stage-label .optional {
+  color: #888;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.auto-calc-text {
+  font-size: 0.95em;
+  color: #00cc66;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.error-text {
+  font-size: 0.95em;
+  color: #ff5555;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.plan-title {
+  text-align: left;
+  font-size: 1.4em;
+  color: #00aaff;
+  margin-bottom: 5px;
 }
 
 ul {
@@ -90,6 +138,62 @@ li {
   justify-content: space-between;
   align-items: center;
   font-size: 1.1em;
+}
+
+.plan-item {
+  gap: 10px;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.plan-name {
+  font-weight: bold;
+}
+
+.plan-detail {
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+.empty-plan {
+  color: #888;
+  font-size: 0.95em;
+  justify-content: center;
+}
+
+.remove-btn {
+  background-color: transparent;
+  color: #ff5555;
+  padding: 4px 10px;
+  font-size: 1em;
+}
+
+.remove-btn:hover {
+  background-color: rgba(255, 85, 85, 0.15);
+}
+
+.cancel-btn {
+  margin-top: 15px;
+  background-color: #ff5555;
+}
+
+.cancel-btn:hover {
+  background-color: #dd3333;
+}
+
+.up-next {
+  color: #ffffff;
+  font-size: 1.15em;
+}
+
+.after-that {
+  color: #888;
+  font-size: 0.95em;
 }
 
 .timer-container {
