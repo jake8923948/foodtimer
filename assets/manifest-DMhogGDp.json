@@ -1,0 +1,16 @@
+{
+  "short_name": "CookTime",
+  "name": "CookTime \u2014 Multi-Timer for Perfect Timing",
+  "description": "Plan every dish backwards from serving time and get told exactly when to add, flip, stir and rest each one so everything is done together.",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#0a0d12",
+  "background_color": "#0a0d12",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
